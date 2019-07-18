@@ -13,7 +13,8 @@
 
 whatswidget('config', { 
     message: 'Widget example! ❤',
-    showMessageAlways: true
+    showMessageAlways: true,
+    useCookies: true
 })
 ```
 
@@ -21,8 +22,8 @@ whatswidget('config', {
 
 |                       | **description**                                                                                                                                          | **required** | **default** |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------|
-| **message**           | Widget message.                                                                                                                                          | No           |             |
-| **phone**             | **Don't forget** to add the prefix of your country, for example, 34666666666 (Spain uses +34 for the prefix, don't use + or parentheses for the number). | No           |             |
-| **floatLeft**         | Align the widget to the left.                                                                                                                            | No           | false       |
+| **message**           | Widget welcome message. If not provided, no message will be shown.                                                                                                                                          | No           |             |
+| **phone**             | **Don't forget** to add the prefix of your country, for example, 34666666666 (Spain uses +34 for the prefix, don't use + or parentheses for the number). If no number is provided, the widget will not redirect on click. | No           |             |
+| **floatLeft**         | Align the widget to the left. By default it's aligned to the right.                                                                                                                           | No           | false       |
 | **showMessageAlways** | The message is hidden by default on mobile viewports, it is, however, responsive, so just change to true and it will show on smartphones too.            | No           | false       |
 | **useCookies**        | Show the message only once per day, change to false to not use cookies and show the message everytime the user visits your site.                         | No           | false        |
