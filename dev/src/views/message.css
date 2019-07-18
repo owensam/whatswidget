@@ -18,7 +18,7 @@
     width: auto;
     display: none;
 }
-.whatswidget-container .whatswidget-message span{ content: ''; position: absolute; width: 15px; height: 15px; right: 5px; top: 6px; left: auto; }
+.whatswidget-container .whatswidget-message span{ content: ''; position: absolute; width: 15px; height: 15px; right: 10px; top: 6px; left: auto; }
 .whatswidget-container .whatswidget-message span:hover{ cursor: pointer; }
 .whatswidget-container .whatswidget-message span::after{ content: ''; position: absolute; top: 8px; left: 0; width: 10px; height: 1px; background-color: #979797; transform: rotate(45deg); }
 .whatswidget-container .whatswidget-message span::before{ content: ''; position: absolute; top: 8px; left: 0; width: 10px; height: 1px; background-color: #979797; transform: rotate(-45deg); }
@@ -59,5 +59,6 @@
 /* Tablets */
 @media only screen and (min-width : 768px) 
 {
+    .whatswidget-container .whatswidget-message span{ right: 6px;}
     .whatswidget-container .whatswidget-message{ display: block; }
 }
