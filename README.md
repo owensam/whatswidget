@@ -34,4 +34,4 @@ whatswidget('config', {
 - [ ] Add an option to use a custom image instead of the whatsapp logo
 - [ ] Add explanation of how to run the project locally
 - [ ] Uglify the widget css
-- [x] Add option to use cookies (to show the message only once per day)
+- [x] ~~Add option to use cookies (to show the message only once per day)~~
