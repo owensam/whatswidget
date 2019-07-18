@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 var copyWebpackPlugin = require('copy-webpack-plugin');
-const bundleOutputDir = '../js';
+const bundleOutputDir = 'demo/';
 
 module.exports = (env) => {
     const isDevBuild = !(env && env.prod);

@@ -13,11 +13,12 @@
             w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
             js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]
             js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs)
-        }(window, document, 'script', 'whatswidget', '../../js/widget.js'))
+        }(window, document, 'script', 'whatswidget', 'widget.js'))
 
         whatswidget('config', { 
-            message: 'Widget example! ❤ Also testing max width of the widget text! we need to make it not too big',
-            showMessageAlways: true
+            message: 'Widget example! ❤',
+            showMessageAlways: true,
+            useCookies: true
         })
     </script>
 </body>
