@@ -8,7 +8,6 @@ let container = tmp.querySelector('.whatswidget-container')
 
 /* TODO 
     * Change whatsapp phone icon
-    * Fix cookies
     * Change netlify links to github pages
     * Animation when showing the message
 */    
