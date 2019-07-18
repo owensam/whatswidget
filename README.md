@@ -28,10 +28,26 @@ whatswidget('config', {
 | **showMessageAlways** | The message is hidden by default on mobile viewports, it is, however, responsive, so just change to true and it will show on smartphones too.            | No           | false       |
 | **useCookies**        | Show the message only once per day, change to false to not use cookies and show the message everytime the user visits your site.                         | No           | false        |
 
+### Run the project locally
+
+```bash
+git clone https://github.com/mascarell/whatswidget.git
+
+# to test locally
+cd dev
+npm install
+npm run start
+
+# to build for release
+npm run build-production
+```
+
+
 ### TODO
 
-- [ ] Make a simple landing page for the widget
-- [ ] Add an option to use a custom image instead of the whatsapp logo
-- [ ] Add explanation of how to run the project locally
-- [ ] Uglify the widget css
-- [x] ~~Add option to use cookies (to show the message only once per day)~~
+- [ ] Make a simple landing page for the widget.
+- [ ] Add picture to the repo showing an example of the widget.
+- [ ] (?) Add an option to use a custom image instead of the whatsapp logo.
+- [ ] Uglify the widget css (classes on both css and html are way too big, need to make them smaller to reduce widget size, 11.1kb right now).
+- [x] ~~Add explanation of how to run the project locally.~~
+- [x] ~~Add option to use cookies (to show the message only once per day).~~
