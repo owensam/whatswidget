@@ -46,6 +46,7 @@ npm run build-production
 ### TODO
 
 - [ ] Make a simple landing page for the widget.
+- [ ] (!) Initialize the widget afther the website has loaded.
 - [ ] Add picture to the repo showing an example of the widget.
 - [ ] (?) Add an option to use a custom image instead of the whatsapp logo.
 - [ ] Uglify the widget css (classes on both css and html are way too big, need to make them smaller to reduce widget size, 11.1kb right now).
