@@ -23,21 +23,29 @@
 .whatswidget-container .whatswidget-message span::after{ content: ''; position: absolute; top: 8px; left: 0; width: 10px; height: 1px; background-color: #979797; transform: rotate(45deg); }
 .whatswidget-container .whatswidget-message span::before{ content: ''; position: absolute; top: 8px; left: 0; width: 10px; height: 1px; background-color: #979797; transform: rotate(-45deg); }
 .whatswidget-container .whatswidget-button{
-    box-shadow: 2px 2px 10px 5px #dadada;
     content: '';
     width: 48px; height: 48px;
-    border: 2px solid white;
     position: relative;
     float: right;
     display: flex; justify-content: center; align-items: center;
-    border-radius: 50px;
     transition: .1s linear;
-    background-color: #25D366;
+    /* background-color: #25D366; */
 }
-.whatswidget-container .whatswidget-button img{ max-width: 50%; }
-.whatswidget-container .whatswidget-button:hover{
+.whatswidget-container .whatswidget-button::before{ 
+    content: ''; position: absolute;
+    border-radius: 50%;
+    z-index: 10000;
+    width: 100%; height: 100%;
+    box-shadow: 2px 2px 10px 5px #dadada;
+}
+.whatswidget-container .whatswidget-button img{ 
+    z-index: 10001;
+    transition: .1s linear;
+    max-width: 100%; 
+}
+.whatswidget-container .whatswidget-button:hover img{
     cursor: pointer;
-    box-shadow: none;
+    transform: scale(1.1);
 }
 
 /* POSITION THE WIDGET TO THE LEFT */
