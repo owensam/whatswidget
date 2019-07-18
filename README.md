@@ -4,7 +4,7 @@
 
 ### Usage
 
-´´´js
+```javascript
 (function (w,d,s,o,f,js,fjs) {
     w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
     js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]
@@ -15,7 +15,7 @@ whatswidget('config', {
     message: 'Widget example! ❤',
     showMessageAlways: true
 })
-´´´
+```
 
 ### Configuration options
 
