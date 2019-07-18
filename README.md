@@ -9,7 +9,7 @@
     w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
     js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]
     js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs)
-}(window, document, 'script', 'whatswidget', 'link goes here'))
+}(window, document, 'script', 'whatswidget', 'https://mascarell.github.io/whatswidget/js/widget.js'))
 
 whatswidget('config', { 
     message: 'Widget example! ❤',
@@ -27,3 +27,11 @@ whatswidget('config', {
 | **floatLeft**         | Align the widget to the left. By default it's aligned to the right.                                                                                                                           | No           | false       |
 | **showMessageAlways** | The message is hidden by default on mobile viewports, it is, however, responsive, so just change to true and it will show on smartphones too.            | No           | false       |
 | **useCookies**        | Show the message only once per day, change to false to not use cookies and show the message everytime the user visits your site.                         | No           | false        |
+
+### TODO
+
+- [ ] Make a simple landing page for the widget
+- [ ] Add an option to use a custom image instead of the whatsapp logo
+- [ ] Add explanation of how to run the project locally
+- [ ] Uglify the widget css
+- [x] Add option to use cookies (to show the message only once per day)

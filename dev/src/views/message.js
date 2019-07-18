@@ -7,7 +7,6 @@ tmp.innerHTML = html
 let container = tmp.querySelector('.whatswidget-container')
 
 /* TODO 
-    * Change netlify links to github pages
     * Animation when showing the message
     * Rename all the classes on the css / html so it's shorter and the widget is lighter
 */    
