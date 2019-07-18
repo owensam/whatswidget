@@ -32,10 +32,13 @@ whatswidget('config', {
 
 ```bash
 git clone https://github.com/mascarell/whatswidget.git
+cd whatswidget
 
-# to test locally
+# install dependencies
 cd dev
 npm install
+
+# to test locally
 npm run start
 
 # to build for release
