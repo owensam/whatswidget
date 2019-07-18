@@ -32,9 +32,6 @@ bower_components
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Ignore the dev folder of the widget
-dev-widget/
-
 # Dependency directories
 node_modules/
 jspm_packages/

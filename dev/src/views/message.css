@@ -1,0 +1,54 @@
+.whatswidget-container{
+    position: fixed;
+    z-index: 10002;
+    bottom: 0; right: 0;
+    content: '';
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 12px;
+}
+.whatswidget-container .whatswidget-message{
+    position: relative;
+    font-size: 11px; background-color: #f7f7f7;
+    box-shadow: 2px 2px 10px 5px #dadada;
+    padding: 6px 18px; padding-right: 24px;
+    border-radius: 50px;
+    color: #525252;
+    font-weight: 600;
+    margin-bottom: 12px;
+    width: auto;
+    display: none;
+}
+.whatswidget-container .whatswidget-message span{ content: ''; position: absolute; width: 15px; height: 15px; right: 5px; top: 50%; transform: translateY(-50%); }
+.whatswidget-container .whatswidget-message span:hover{ cursor: pointer; }
+.whatswidget-container .whatswidget-message span::after{ content: ''; position: absolute; top: 8px; left: 0; width: 10px; height: 1px; background-color: #979797; transform: rotate(45deg); }
+.whatswidget-container .whatswidget-message span::before{ content: ''; position: absolute; top: 8px; left: 0; width: 10px; height: 1px; background-color: #979797; transform: rotate(-45deg); }
+.whatswidget-container .whatswidget-button{
+    box-shadow: 2px 2px 10px 5px #dadada;
+    content: '';
+    width: 48px; height: 48px;
+    border: 2px solid white;
+    position: relative;
+    float: right;
+    display: flex; justify-content: center; align-items: center;
+    border-radius: 50px;
+    transition: .1s linear;
+    background-color: #25D366;
+}
+.whatswidget-container .whatswidget-button img{ max-width: 50%; }
+.whatswidget-container .whatswidget-button:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+/* POSITION THE WIDGET TO THE LEFT */
+.whatswidget-container.left{ left: 0; width: auto; right: initial; }
+.whatswidget-container.left .whatswidget-button{ float: left; }
+
+/* SHOW WIDGET ON MOBILES DIVICES */
+.whatswidget-container.show-message-always .whatswidget-message{ display: block; }
+
+/* Tablets */
+@media only screen and (min-width : 768px) 
+{
+    .whatswidget-container .whatswidget-message{ display: block; }
+}

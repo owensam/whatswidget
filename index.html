@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>WhatsWidget - Simple WhatsApp widget for your website</title>
+
+    <!-- Font awesome for icons and Bulma for css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script>
+        (function (w,d,s,o,f,js,fjs) {
+            w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
+            js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]
+            js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs)
+        }(window, document, 'script', 'whatswidget', 'js/widget.js'))
+
+        whatswidget('config', { 
+            message: 'Pssst! 👀 This widget does not work, but is a good visual example of how yours will look.',
+            showMessageAlways: true
+        })
+    </script>
 </head>
 <body>
     <h1>website is a wip, just head to the repo <a href="https://github.com/mascarell/whatswidget">here</a> for more info</h1>
