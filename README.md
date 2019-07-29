@@ -4,7 +4,7 @@
 
 ### Usage
 
-Just add a <script> tag before you close your <head> tag. 
+Just add a <script></script> before you close your <head></head> tag. 
 
 ```javascript
 (function (w,d,s,o,f,js,fjs) {
