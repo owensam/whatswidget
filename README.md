@@ -13,6 +13,7 @@
 
 whatswidget('config', { 
     message: 'Widget example! ❤',
+    phone: '123456789'
     showMessageAlways: true,
     useCookies: true
 })
@@ -40,6 +41,8 @@ npm install
 
 # to test locally
 npm run start
+#or
+npm run build
 
 # to build for release
 npm run build-production
@@ -49,9 +52,8 @@ npm run build-production
 ### TODO
 
 - [ ] Make a simple landing page for the widget.
-- [ ] (!) Initialize the widget afther the website has loaded.
 - [ ] Add picture to the repo showing an example of the widget.
-- [ ] (?) Add an option to use a custom image instead of the whatsapp logo.
-- [ ] Uglify the widget css (classes on both css and html are way too big, need to make them smaller to reduce widget size, 11.1kb right now).
+- [ ] Add animations to the icon / message.
+- [x] ~~Minify css/html~~
 - [x] ~~Add explanation of how to run the project locally.~~
 - [x] ~~Add option to use cookies (to show the message only once per day).~~

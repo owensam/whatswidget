@@ -4,7 +4,7 @@ import './message.css';
 let body
 let tmp = document.createElement('div')
 tmp.innerHTML = html
-let container = tmp.querySelector('.whatswidget-container')
+let container = tmp.querySelector('.whtsc')
 
 /* TODO 
     * Animation when showing the message
@@ -16,16 +16,16 @@ export function config(config) {
     if(config.message) {// Welcome message
         // If we use cookies, check to see if the cookie exists already or check if we don't use cookies
         if(config.useCookies && document.cookie.match(/^(.*;)?\s*showmessage\s*=\s*[^;]+(.*)?$/) === null ) {
-            container.querySelector('.whatswidget-message').innerHTML = `${config.message} <span></span>`
-            container.querySelector('.whatswidget-message span').addEventListener('click', closeMessage) // Event listener to close the message on the widget
+            container.querySelector('.whtsm').innerHTML = `${config.message} <span></span>`
+            container.querySelector('.whtsm span').addEventListener('click', closeMessage) // Event listener to close the message on the widget
             createCookie('showmessage', 'no', 1) // Create the cookie
         } else if (!config.useCookies) { // Show the message if we're not using cookies always
-            container.querySelector('.whatswidget-message').innerHTML = `${config.message} <span></span>`
-            container.querySelector('.whatswidget-message span').addEventListener('click', closeMessage) // Event listener to close the message on the widget
+            container.querySelector('.whtsm').innerHTML = `${config.message} <span></span>`
+            container.querySelector('.whtsm span').addEventListener('click', closeMessage) // Event listener to close the message on the widget
         } else // Remove the div that contains the welcome message if we're using the cookie and it already exists
-            container.querySelector('.whatswidget-message').remove()
+            container.querySelector('.whtsm').remove()
     } else // If there's no welcome message, remove that div
-        container.querySelector('.whatswidget-message').remove()
+        container.querySelector('.whtsm').remove()
         
     if(config.phone) // Add whatsapp link
         container.querySelector('.whatswidget-button').href = `https://api.whatsapp.com/send?phone=${config.phone}`
@@ -41,7 +41,7 @@ export function config(config) {
 
 /* Close widget welcome message */
 export function closeMessage() {
-    container.querySelector('.whatswidget-message').style.display = 'none'
+    container.querySelector('.whtsm').style.display = 'none'
 }
 
 /* Function to create a cookie to show the message only once each day */
