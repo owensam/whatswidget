@@ -45,7 +45,7 @@ npm run start
 npm run build
 
 # to build for release
-npm run build-production
+npm run build-release
 ```
 
 
