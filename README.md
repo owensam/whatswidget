@@ -4,6 +4,8 @@
 
 ### Usage
 
+Just add a <script> tag before you close your <head> tag. 
+
 ```javascript
 (function (w,d,s,o,f,js,fjs) {
     w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
