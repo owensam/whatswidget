@@ -15,7 +15,7 @@ let container = tmp.querySelector('.whtsc')
 export function config(config) {    
     if(config.message) {// Welcome message
         // If we use cookies, check to see if the cookie exists already or check if we don't use cookies
-        if(config.useCookies && document.cookie.match(/^(.*;)?\s*showmessage\s*=\s*[^;]+(.*)?$/) === null ) {
+        if(config.useCookies && document.cookie.match(/^(.*;)?\s*showmessage\s*=\s*[^;]+(.*)?$/) == null ) {
             container.querySelector('.whtsm').innerHTML = `${config.message} <span></span>`
             container.querySelector('.whtsm span').addEventListener('click', closeMessage) // Event listener to close the message on the widget
             createCookie('showmessage', 'no', 1) // Create the cookie

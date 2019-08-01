@@ -15,7 +15,7 @@ Just add a **script** before you close your **head** tag.
 
 whatswidget('config', { 
     message: 'Widget example! ❤',
-    phone: '123456789'
+    phone: '123456789',
     showMessageAlways: true,
     useCookies: true
 })
