@@ -4,14 +4,14 @@
 
 ### Usage
 
-Just add a **script** before you close your **head** tag. 
+Just add a **script** before your closing **head** tag. 
 
 ```javascript
 (function (w,d,s,o,f,js,fjs) {
     w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
     js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]
     js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs)
-}(window, document, 'script', 'whatswidget', 'https://whatswidget.netlify.com/widget.js'))
+}(window, document, 'script', 'whatswidget', 'https://cdn.jsdelivr.net/gh/mascarell/whatswidget/widget.js'))
 
 whatswidget('config', {
     message: 'Widget example! 🔥',
@@ -53,8 +53,7 @@ npm run build-release
 
 ### TODO
 
-- [ ] Make a simple landing page for the widget.
-- [ ] Add picture to the repo showing an example of the widget.
 - [ ] Add animations to the icon / message.
+- [ ] Add picture to the repo showing an example of the widget.
 - [x] ~~Add explanation of how to run the project locally.~~
 - [x] ~~Add option to use cookies (to show the message only once per day).~~
