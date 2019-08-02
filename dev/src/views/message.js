@@ -6,11 +6,6 @@ let tmp = document.createElement('div')
 tmp.innerHTML = html
 let container = tmp.querySelector('.whtsc')
 
-/* TODO 
-    * Animation when showing the message
-    * Rename all the classes on the css / html so it's shorter and the widget is lighter
-*/    
-
 /* Initial configuration for the widget */
 export function config(config) {    
     if(config.message) {// Welcome message

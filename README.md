@@ -13,8 +13,8 @@ Just add a **script** before you close your **head** tag.
     js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs)
 }(window, document, 'script', 'whatswidget', 'https://whatswidget.netlify.com/widget.js'))
 
-whatswidget('config', { 
-    message: 'Widget example! ❤',
+whatswidget('config', {
+    message: 'Widget example! 🔥',
     phone: '123456789',
     showMessageAlways: true,
     useCookies: true
@@ -56,6 +56,5 @@ npm run build-release
 - [ ] Make a simple landing page for the widget.
 - [ ] Add picture to the repo showing an example of the widget.
 - [ ] Add animations to the icon / message.
-- [x] ~~Minify css/html~~
 - [x] ~~Add explanation of how to run the project locally.~~
 - [x] ~~Add option to use cookies (to show the message only once per day).~~
