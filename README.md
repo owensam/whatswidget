@@ -1,3 +1,5 @@
+![WhatsWidget mockup](assets/mockup.jpg)
+
 ## WhatsWidget
 
 **WhatsWidget** is a simple javascript widget that allow your customers to talk to you directly on whatsapp. It's based on [this post](https://blog.jenyay.com/building-javascript-widget/) by Jenyay so if you're interested in building javascript widgets, start there 👍.
