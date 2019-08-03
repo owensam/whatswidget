@@ -51,11 +51,3 @@ npm run build
 # to build for release
 npm run build-release
 ```
-
-
-### TODO
-
-- [ ] Add animations to the icon / message.
-- [ ] Add picture to the repo showing an example of the widget.
-- [x] ~~Add explanation of how to run the project locally.~~
-- [x] ~~Add option to use cookies (to show the message only once per day).~~
