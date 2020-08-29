@@ -59,4 +59,4 @@ typings/
 
 dist/
 .DS_STORE
-.vscode
+.vscode/
