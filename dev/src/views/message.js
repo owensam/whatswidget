@@ -13,7 +13,7 @@ export function config(config) {
         if(config.useCookies && document.cookie.match(/^(.*;)?\s*showmessage\s*=\s*[^;]+(.*)?$/) == null ) {
             container.querySelector('.whtsm').innerHTML = `${config.message} <span></span>`
             container.querySelector('.whtsm span').addEventListener('click', closeMessage) // Event listener to close the message on the widget
-            createCookie('showmessage', 'no', 1) // Create the cookie
+            createCookie('showmessage', 'no', 7) // Create the cookie
         } else if (!config.useCookies) { // Show the message if we're not using cookies always
             container.querySelector('.whtsm').innerHTML = `${config.message} <span></span>`
             container.querySelector('.whtsm span').addEventListener('click', closeMessage) // Event listener to close the message on the widget
