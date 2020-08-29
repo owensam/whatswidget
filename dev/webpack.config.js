@@ -19,15 +19,8 @@ module.exports = (env) => {
             contentBase: bundleOutputDir
         },
 		plugins: [
-			new webpack.SourceMapDevToolPlugin(), 
-			new copyWebpackPlugin({
-				patterns: [
-					{ from: 'demo', to: './' },
-				],
-				options: {
-					concurrency: 100,
-				},
-		})],
+			new webpack.SourceMapDevToolPlugin()
+		],
         module: {
             rules: [
                 { test: /\.html$/i, use: 'html-loader' },
