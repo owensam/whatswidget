@@ -16,7 +16,14 @@ module.exports = (env) => {
             contentBase: bundleOutputDir
         },
         plugins: isDevBuild
-            ? [new webpack.SourceMapDevToolPlugin(), new copyWebpackPlugin([{ from: 'demo/' }])]
+			? [new webpack.SourceMapDevToolPlugin(), new copyWebpackPlugin({
+				patterns: [
+					{ from: 'demo', to: './' },
+				],
+				options: {
+					concurrency: 100,
+				},
+			})]
             : [new webpack.optimize.UglifyJsPlugin()],
         module: {
             rules: [
