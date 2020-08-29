@@ -22,7 +22,7 @@ module.exports = (env) => {
 			new webpack.SourceMapDevToolPlugin(), 
 			new copyWebpackPlugin({
 				patterns: [
-					{ from: 'demo', to: 'dev/demo' },
+					{ from: 'demo', to: './' },
 				],
 				options: {
 					concurrency: 100,
