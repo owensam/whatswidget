@@ -11,24 +11,27 @@ module.exports = (env) => {
         output: {
             filename: 'widget.js',
             path: path.resolve(bundleOutputDir),
-        },
+		},
+		optimization: isDevBuild
+			? { minimize: false }
+			: { minimize: true },
         devServer: {
             contentBase: bundleOutputDir
         },
-        plugins: isDevBuild
-			? [new webpack.SourceMapDevToolPlugin(), new copyWebpackPlugin({
+		plugins: [
+			new webpack.SourceMapDevToolPlugin(), 
+			new copyWebpackPlugin({
 				patterns: [
-					{ from: 'demo', to: './' },
+					{ from: 'demo', to: 'dev/demo' },
 				],
 				options: {
 					concurrency: 100,
 				},
-			})]
-            : [new webpack.optimize.UglifyJsPlugin()],
+		})],
         module: {
             rules: [
                 { test: /\.html$/i, use: 'html-loader' },
-                { test: /\.css$/i, use: ['style-loader', 'css-loader' + (isDevBuild ? '' : '?minimize')] },
+                { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
                 {
                     test: /\.js$/i, exclude: /node_modules/, use: {
                         loader: 'babel-loader',
