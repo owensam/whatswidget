@@ -31,6 +31,7 @@ Just add a **script** before your closing **head** tag.
 
 whatswidget('config', {
     message: 'Widget example! 🔥',
+	// You can put only one number in the array if you don't need multiple phones support
     phone: ['34123456789', '34444444444', '34666666666'],
     showMessageAlways: true,
     useCookies: true
