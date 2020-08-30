@@ -33,8 +33,13 @@ export function config(config) {
 		
 	// Add whatsapp link
     if(config.phone) {
-		// TODO -> add support for multiple phone numbers and message a random one from the list
-        container.querySelector('.whatswidget-button').href = `https://api.whatsapp.com/send?phone=${config.phone}`;
+		try {
+			let randomPhone = config.phone[Math.floor(Math.random() * config.phone.length)];
+			
+			container.querySelector('.whatswidget-button').href = `https://api.whatsapp.com/send?phone=${randomPhone}`;
+		} catch (error) {
+			console.error('whatswidget -> cannot select phone number');
+		}
 	}
 
 	// Show the widget on the left side of the page
