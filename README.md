@@ -20,7 +20,7 @@
 
 ### Usage
 
-Just add a **script** before your closing **head** tag. 
+Just add a **script** before your closing **head** tag (You can see an example [here](https://codepen.io/mascarell/pen/yLOXWOW)).
 
 ```javascript
 (function (w,d,s,o,f,js,fjs) {
