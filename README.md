@@ -13,7 +13,7 @@
 * Change the position of the widget
 * Customize the message and when it appears
 
-## WIP
+#### WIP
 
 * Light and dark theme
 * Change the green color of the WhatsApp icon to whatever you want
