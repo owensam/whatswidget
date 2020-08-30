@@ -27,7 +27,7 @@ Just add a **script** before your closing **head** tag (You can see an example [
     w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
     js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]
     js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs)
-}(window, document, 'script', 'whatswidget', 'https://cdn.jsdelivr.net/gh/mascarell/whatswidget/widget.js'))
+}(window, document, 'script', 'whatswidget', 'https://cdn.jsdelivr.net/gh/mascarell/whatswidget@latest/widget.js'))
 
 whatswidget('config', {
     message: 'Widget example! 🔥',
