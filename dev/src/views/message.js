@@ -16,7 +16,7 @@ export function config(config) {
 			// Event listener to close the message on the widget
 			container.querySelector('.whtsm span').addEventListener('click', closeMessage);
 			// Create the cookie
-			createCookie('showmessage', 'no', 7);
+			createCookie('showmessage', 'no', 1);
 		// Show the message if we're not using cookies
         } else if (!config.useCookies) {
 			container.querySelector('.whtsm').innerHTML = `${config.message} <span></span>`;
@@ -62,7 +62,7 @@ export function closeMessage() {
     container.querySelector('.whtsm').style.display = 'none'
 }
 
-/* Function to create a cookie to show the message only once each day */
+/* Function to create a cookie to show the message only once every day */
 /* Taken from here https://stackoverflow.com/questions/6561687/how-can-i-set-a-cookie-to-expire-after-x-days-with-this-code-i-have */
 function createCookie(name, value, days) {
 	console.log('creating cookie');
