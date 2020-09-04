@@ -1,4 +1,4 @@
-![WhatsWidget mockup](assets/mockup.jpg)
+![WhatsWidget mockup](assets/whatswidget.gif)
 
 ## WhatsWidget
 
