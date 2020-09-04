@@ -16,6 +16,8 @@
 #### WIP
 
 * Light and dark theme
+* WordPress plugin
+* Landing page with code generator for non-techie users
 * Change the green color of the WhatsApp icon to whatever you want
 
 ### Usage
