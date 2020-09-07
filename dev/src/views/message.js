@@ -8,6 +8,12 @@ let container = tmp.querySelector('.whtsc');
 
 /* Initial configuration for the widget */
 export function config(config) {    
+	// Add animations if the option is enabled
+	if(config.useAnimations) {
+		container.querySelector('.whtsm').classList.add('slide');
+		container.querySelector('.whatswidget-button').classList.add('zoomIn');
+	}
+	
 	// Welcome message
     if(config.message) {
         // If we use cookies, check to see if the cookie exists already

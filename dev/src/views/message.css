@@ -24,7 +24,7 @@
 	display: none;
 	animation-duration: .5s;
 	animation-fill-mode: both;
-	animation-name: slide;
+	/* animation-name: slide; */
 	animation-delay: 1s;
 }
 .whtsc .whtsm span{ content: ''; position: absolute; width: 15px; height: 15px; right: 15px; top: 15px; left: auto; }
@@ -38,10 +38,9 @@
     float: right;
     display: flex; justify-content: center; align-items: center;
     transition: .1s linear;
-	/* background-color: #25D366; */
 	animation-duration: .5s;
 	animation-fill-mode: both;
-	animation-name: zoomIn;
+	/* animation-name: zoomIn; */
 }
 .whtsc .whatswidget-button::before{ 
     content: ''; position: absolute;
@@ -87,3 +86,7 @@
         opacity: 0;
     }
 }
+
+/* Classes for animations */
+.zoomIn { animation-name: zoomIn; }
+.slide { animation-name: slide; }

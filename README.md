@@ -36,7 +36,8 @@ whatswidget('config', {
 	// You can put only one number in the array if you don't need multiple phones support
     phone: ['34123456789', '34444444444', '34666666666'],
     showMessageAlways: true,
-    useCookies: true
+	useCookies: true,
+	useAnimations: true,
 })
 ```
 
@@ -49,6 +50,7 @@ whatswidget('config', {
 | **floatLeft**         | Align the widget to the left. By default it's aligned to the right.                                                                                                                           | No           | false       |
 | **showMessageAlways** | The message is hidden by default on mobile viewports, it is, however, responsive, so just change to true and it will show on smartphones too.            | No           | false       |
 | **useCookies**        | Show the message only once per day, change to false to not use cookies and show the message everytime the user visits your site.                         | No           | false        |
+| **useAnimations**        | Use animations on the button and message                        | No           | false        |
 
 ### Run the project locally
 

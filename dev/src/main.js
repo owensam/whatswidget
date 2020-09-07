@@ -12,7 +12,8 @@ function app(window) {
         phone: false,
         floatLeft: false,
         showMessageAlways: false,
-        useCookies: false
+		useCookies: false,
+		useAnimations: false
     }
 
     // all methods that were called till now and stored in queue
