@@ -2,7 +2,7 @@
 
 ## WhatsWidget
 
-**WhatsWidget** is a simple javascript widget that allow your customers to talk to you directly on whatsapp. It's based on [this post](https://blog.jenyay.com/building-javascript-widget/) by Jenyay so if you're interested in building javascript widgets, start there 👍.
+**WhatsWidget** is a simple javascript widget started by [@mascarelldev](https://twitter.com/mascarelldev) that allow your customers to talk to you directly on whatsapp. It's based on [this post](https://blog.jenyay.com/building-javascript-widget/) by Jenyay so if you're interested in building javascript widgets, start there 👍.
 
 
 ### Features
