@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+/* Container */
 .whtsc{
     position: fixed;
     z-index: 10002;
     bottom: 0; right: 0; left: auto; top: auto;
     content: '';
-    font-family: Verdana, Geneva, sans-serif;
     padding: 12px;
 }
+
+/* Message above icon */
 .whtsc .whtsm{
     position: relative;
-    font-size: 18px; background-color: #f7f7f7;
-    letter-spacing: 1px;
-    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 14px; background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
     box-shadow: 1px 2px 8px rgba(70,70,70,.25);
-    padding: 10px 20px; padding-right: 30px;
+    padding: 15px 20px; padding-right: 30px;
     border-radius: 8px;
     color: #525252;
     font-weight: 600;
@@ -24,13 +25,42 @@
 	display: none;
 	animation-duration: .5s;
 	animation-fill-mode: both;
-	/* animation-name: slide; */
 	animation-delay: 1s;
 }
-.whtsc .whtsm span{ content: ''; position: absolute; width: 15px; height: 15px; right: 15px; top: 15px; left: auto; }
+
+/* Close button */
+.whtsc .whtsm span{ 
+	content: ''; 
+	position: absolute; 
+	width: 10px; 
+	height: 10px; 
+	right: 15px; 
+	top: 15px; 
+	left: auto; 
+}
 .whtsc .whtsm span:hover{ cursor: pointer; }
-.whtsc .whtsm span::after{ content: ''; position: absolute; top: 8px; left: 0; width: 10px; height: 2px; background-color: #979797; transform: rotate(45deg); }
-.whtsc .whtsm span::before{ content: ''; position: absolute; top: 8px; left: 0; width: 10px; height: 2px; background-color: #979797; transform: rotate(-45deg); }
+.whtsc .whtsm span::after{ 
+	content: ''; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 10px; 
+	height: 2px; 
+	background-color: #979797; 
+	transform: rotate(45deg); 
+}
+.whtsc .whtsm span::before{ 
+	content: ''; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 10px; 
+	height: 2px; 
+	background-color: #979797; 
+	transform: rotate(-45deg); 
+}
+
+/* Button */
 .whtsc .whatswidget-button{
     content: '';
     width: 48px; height: 48px;
@@ -40,7 +70,6 @@
     transition: .1s linear;
 	animation-duration: .5s;
 	animation-fill-mode: both;
-	/* animation-name: zoomIn; */
 }
 .whtsc .whatswidget-button::before{ 
     content: ''; position: absolute;
