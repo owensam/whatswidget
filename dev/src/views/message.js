@@ -42,7 +42,7 @@ export function config(config) {
 		try {
 			let randomPhone = config.phone[Math.floor(Math.random() * config.phone.length)];
 			
-			container.querySelector('.whatswidget-button').href = `https://api.whatsapp.com/send?phone=${randomPhone}`;
+			container.querySelector('.whatswidget-button').href = `https://wa.me/${randomPhone}`;
 		} catch (error) {
 			console.error('whatswidget -> cannot select phone number');
 		}
