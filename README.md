@@ -37,8 +37,8 @@ whatswidget('config', {
     phone: ['34123456789', '34444444444', '34666666666'],
     showMessageAlways: true,
     useCookies: true,
-	useAnimations: true,
-	useDarkTheme: false,
+    useAnimations: true,
+    useDarkTheme: false,
 })
 ```
 
