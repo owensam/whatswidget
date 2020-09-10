@@ -12,10 +12,10 @@
 * Use multiple phone numbers to talk with your customers
 * Change the position of the widget
 * Customize the message and when it appears
+* Light and dark theme
 
 #### WIP
 
-* Light and dark theme
 * WordPress plugin
 * Landing page with code generator for non-techie users
 * Change the green color of the WhatsApp icon to whatever you want
@@ -37,7 +37,8 @@ whatswidget('config', {
     phone: ['34123456789', '34444444444', '34666666666'],
     showMessageAlways: true,
     useCookies: true,
-    useAnimations: true,
+	useAnimations: true,
+	useDarkTheme: false,
 })
 ```
 
@@ -51,6 +52,7 @@ whatswidget('config', {
 | **showMessageAlways** | The message is hidden by default on mobile viewports, it is, however, responsive, so just change to true and it will show on smartphones too.            | No           | false       |
 | **useCookies**        | Show the message only once per day, change to false to not use cookies and show the message everytime the user visits your site.                         | No           | false        |
 | **useAnimations**        | Use animations on the button and message                        | No           | false        |
+| **useDarkTheme**        | Use dark theme                       | No           | false        |
 
 ### Run the project locally
 

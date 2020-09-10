@@ -13,7 +13,8 @@ function app(window) {
         floatLeft: false,
         showMessageAlways: false,
 		useCookies: false,
-		useAnimations: false
+		useAnimations: false,
+		useDarkTheme: false,
     }
 
     // all methods that were called till now and stored in queue

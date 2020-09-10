@@ -13,6 +13,13 @@ export function config(config) {
 		container.querySelector('.whtsm').classList.add('slide');
 		container.querySelector('.whatswidget-button').classList.add('zoomIn');
 	}
+
+	// Add dark theme classes if the option is enabled
+	if (config.useDarkTheme) {
+		container.classList.add('dark');
+		let imgUrl = container.querySelector('img').src;
+		container.querySelector('img').src = imgUrl.replace('whatsapp.svg', 'whatsapp-dark.svg');
+	}
 	
 	// Welcome message
     if(config.message) {

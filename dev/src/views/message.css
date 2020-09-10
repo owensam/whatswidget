@@ -96,6 +96,22 @@
 /* SHOW WIDGET ON MOBILES DIVICES */
 .whtsc.show-message-always .whtsm{ display: block; }
 
+/* Dark theme */
+.whtsc.dark .whtsm{
+    font-size: 14px; background-color: #081131;
+    box-shadow: 1px 2px 8px rgba(70,70,70,.25);
+    color: #eeeeee;
+}
+.whtsc.dark .whatswidget-button::before{ 
+    box-shadow: 1px 2px 8px rgba(70,70,70,.25);
+}
+.whtsc.dark .whtsm span::after{ 
+	background-color: #e2e2e2; 
+}
+.whtsc.dark .whtsm span::before{ 
+	background-color: #e2e2e2; 
+}
+
 /* Tablets */
 @media only screen and (min-width : 768px) 
 {
