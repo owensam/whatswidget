@@ -17,8 +17,6 @@ export function config(config) {
 	// Add dark theme classes if the option is enabled
 	if (config.useDarkTheme) {
 		container.classList.add('dark');
-		let imgUrl = container.querySelector('img').src;
-		container.querySelector('img').src = imgUrl.replace('whatsapp.svg', 'whatsapp-dark.svg');
 	}
 	
 	// Welcome message
