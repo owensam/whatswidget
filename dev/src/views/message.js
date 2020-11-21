@@ -27,7 +27,7 @@ export function config(config) {
 			// Event listener to close the message on the widget
 			container.querySelector('.whtsm span').addEventListener('click', closeMessage);
 			// Create the cookie
-			createCookie('showmessage', 'no', 1);
+			createCookie('showmessage', 'no', 3);
 		// Show the message if we're not using cookies
         } else if (!config.useCookies) {
 			container.querySelector('.whtsm').innerHTML = `${config.message} <span></span>`;

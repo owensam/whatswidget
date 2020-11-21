@@ -50,7 +50,7 @@ whatswidget('config', {
 | **phone**             | **Array** with the numbers you want people to contact. **Don't forget** to add the prefix of your country, for example, 34666666666 (Spain uses +34 for the prefix, don't use + or parentheses for the number). If no number is provided, the widget will not redirect on click. | No           |             |
 | **floatLeft**         | Align the widget to the left. By default it's aligned to the right.                                                                                                                           | No           | false       |
 | **showMessageAlways** | The message is hidden by default on mobile viewports, it is, however, responsive, so just change to true and it will show on smartphones too.            | No           | false       |
-| **useCookies**        | Show the message only once per day, change to false to not use cookies and show the message everytime the user visits your site.                         | No           | false        |
+| **useCookies**        | Show the message only once every 3 days, change to false to not use cookies and show the message everytime the user visits your site.                         | No           | false        |
 | **useAnimations**        | Use animations on the button and message                        | No           | false        |
 | **useDarkTheme**        | Use dark theme                       | No           | false        |
 
